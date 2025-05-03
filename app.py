@@ -61,5 +61,5 @@ def request_get_logs():
 with app.app_context():
     minecraft_server_manager = config_manager.init_server_manager()
 
-if __name__ == '__main__':
-    app.run()
+def create_app():
+    return app

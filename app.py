@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from mcrcon import MCRcon
+from waitress import serve
 
 import config_manager
 from log_manager import log_info, LogInfoType
@@ -61,5 +61,5 @@ def request_get_logs():
 with app.app_context():
     minecraft_server_manager = config_manager.init_server_manager()
 
-def create_app():
-    return app
+if __name__ == '__main__':
+    serve(app, host="0.0.0.0", port=21)

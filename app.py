@@ -43,6 +43,7 @@ def get_server_title_namep():
 
     return jsonify({'title_name': server.server_name})
 
+
 @app.route('/get-logs')
 def request_get_logs():
     data : dict = request.args

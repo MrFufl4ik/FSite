@@ -1,0 +1,11 @@
+{
+  "minecraft_servers" : [
+    {
+      "server_name" : "Simple Server",
+      "server_rcon_ip" : "127.0.0.1",
+      "server_rcon_port" : 25567,
+      "server_rcon_password" : "123",
+      "server_log_file_path" : "/example/logs.txt"
+    }
+  ]
+}
